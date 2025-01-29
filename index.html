@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Webpage</title>
+  <style>
+    /* Add some basic styles for the button */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5a54e1;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Webpage</h1>
-    <p>This is a simple webpage hosted on GitHub Pages.</p>
+  <h1>Welcome to Our Wedding</h1>
+  <p>We are so happy to share this moment with you!</p>
+  <button onclick="capturePhoto()">Capture Photo</button>
+  <!-- Button to take a photo -->
+  <button onclick="openCamera()">Take a Photo</button>
+    
+
+  <!-- Video stream for camera -->
+  <video id="video" width="320" height="240" autoplay></video>
+  <canvas id="canvas" style="display: none;"></canvas>
+
+  <script src="script.js"></script>
 </body>
 </html>
